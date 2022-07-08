@@ -1,0 +1,74 @@
+<table class="table table-bordered">
+  <thead>
+    <tr class="text-center">
+      <th scope="col">Tipo de Cuenta</th>
+      <th scope="col">Moneda</th>
+      <th scope="col">Banco</th>
+      <th scope="col">Número de cuenta</th>
+      <th scope="col">Número de CCI</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="text-center align-middle">
+      <td>Ahorros</td>
+      <td>Soles</td>
+      <td>Banco de Credito</td>
+      <td>989832423473424</td>
+      <td>0012-324324234324</td>
+      <td>
+        <button type="button" class="btn btn-danger p-2">
+          <i class="bi bi-trash"></i> Eliminar
+        </button>
+      </td>
+    </tr>
+    <tr class="text-center align-middle">
+      <td>Ahorros</td>
+      <td>Soles</td>
+      <td>Banco de Credito</td>
+      <td>989832423473424</td>
+      <td>0012-324324234324</td>
+      <td>
+        <button type="button" class="btn btn-danger p-2">
+          <i class="bi bi-trash"></i> Eliminar
+        </button>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>
+        <select class="form-select">
+          <option disabled selected>Seleccione tipo cuenta</option>
+          <option value="1">Ahorros</option>
+          <option value="2">Corrientes</option>
+        </select>
+      </td>
+      <td>
+        <select class="form-select">
+          <option disabled selected>Seleccione moneda</option>
+          <option value="1">Soles</option>
+          <option value="2">Dólares</option>
+        </select>
+      </td>
+      <td>
+        <select class="form-select">
+          <option disabled selected>Seleccione banco</option>
+          <option value="1">Banco de crédito</option>
+          <option value="2">Banco continental</option>
+          <option value="3">Interbank</option>
+          <option value="4">Scotiabank Perú</option>
+        </select>
+      </td>
+      <td>
+        <input type="text" class="form-control" name="numerocuenta">
+      </td>
+      <td>
+        <input type="text" class="form-control" name="numerocci">
+      </td>
+      <td>
+        <button class="btn btn-sm btn-success" type="button">Agregar</button>
+      </td>
+    </tr>
+  </tfoot>
+</table>

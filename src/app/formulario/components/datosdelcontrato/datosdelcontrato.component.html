@@ -1,0 +1,72 @@
+<div class="row g-3 mt-2 mb-5">
+  <div class="col-2">
+    <label class="form-label">Fecha</label>
+    <input type="text" class="form-control" name="contratofecha" id="contratofecha" [(ngModel)]="contrato.fecha">
+  </div>
+  <div class="col-3">
+    <label class="form-label" for="tipopropiedad">Tipo de propiedad</label>
+    <div class="d-block">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tipopropiedad" id="tipopropiedadindividual" [(ngModel)]="contrato.tipoPropiedad" value="individual">
+        <label class="form-check-label" for="tipopropiedadindividual">Individual</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tipopropiedad" id="tipopropiedadcopropiedad" [(ngModel)]="contrato.tipoPropiedad" value="copropiedad">
+        <label class="form-check-label" for="tipopropiedadcopropiedad">Copropiedad</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-2" *ngIf="contrato.tipoPropiedad =='copropiedad'">
+    <label class="form-label">Porcentaje</label>
+    <input type="text" class="form-control" [(ngModel)]="contrato.porcentaje">
+  </div>
+  <div class="col-3" *ngIf="contrato.tipoPropiedad =='copropiedad'">
+    <label class="form-label" for="tipopropiedad">Tipo de Firma</label>
+    <div class="d-block">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tipofirma" [(ngModel)]="contrato.tipoFirma" value="conjunta">
+        <label class="form-check-label" for="conjunta">Conjunta</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tipofirma" [(ngModel)]="contrato.tipoFirma" value="individual">
+        <label class="form-check-label" for="individual1">Individual</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="clear m-0"></div>
+  <div class="col-2">
+    <label class="form-label">Vinculado</label>
+    <div class="d-block">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="vinculado" [(ngModel)]="contrato.vinculado" value="true">
+        <label class="form-check-label" for="si">Si</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="vinculado" [(ngModel)]="contrato.vinculado" value="false">
+        <label class="form-check-label" for="no">No</label>
+      </div>
+    </div>
+  </div>
+  <div class="col-3">
+    <label class="form-label">¿Es inversionista institucional?</label>
+    <div class="d-block">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="esinversionista" (click)="handleCheck(true)" [(ngModel)]="contrato.inversionistaInstitucional" [value]="true">
+        <label class="form-check-label" for="si1">Si</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="esinversionista" (click)="handleCheck(false)" [(ngModel)]="contrato.inversionistaInstitucional" [value]="false">
+        <label class="form-check-label" for="no1">No</label>
+      </div>
+    </div>
+  </div>
+  <div class="clear m-0">
+  </div>
+  <div class="col-1">
+    <div class="d-grid gap-2">
+      <button class="btn btn-success" [disabled]="!validate()" type="button" (click)="guardar()">Guardar</button>
+    </div>
+  </div>
+</div>

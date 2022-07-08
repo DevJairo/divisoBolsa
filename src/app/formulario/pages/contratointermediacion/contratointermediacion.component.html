@@ -1,0 +1,66 @@
+<div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button" [ngClass]="{'completed': (data$ | async)?.contratoIntermediacionCompleto}" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          <span>Datos del Contrato</span> <i class="bi bi-check-circle-fill"></i>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" [ngClass]="{'show': (data$ | async)?.tabmostrar == 1}" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+          <app-datosdelcontrato></app-datosdelcontrato>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          <span>Datos del Cliente</span> <i class="bi bi-check-circle-fill"></i>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" [ngClass]="{'show': (data$ | async)?.tabmostrar == 2}" aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body">
+          <app-datosdelcliente></app-datosdelcliente>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          <span>Cuentas Bancarias</span> <i class="bi bi-check-circle-fill"></i>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingThree">
+        <div class="accordion-body">
+          <app-cuentasbancarias></app-cuentasbancarias>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+          <span>Data Operatividad del Cliente</span> <i class="bi bi-check-circle-fill"></i>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingFour">
+        <div class="accordion-body">
+          <app-dataoperatividadcliente></app-dataoperatividadcliente>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+          <span>Autorización y Aceptación</span> <i class="bi bi-check-circle-fill"></i>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingFive">
+        <div class="accordion-body">
+          <app-autorizacion></app-autorizacion>
+        </div>
+      </div>
+    </div>
+
+  </div>
