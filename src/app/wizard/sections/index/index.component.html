@@ -1,0 +1,78 @@
+<div class="wizard">
+  <div class="container">
+    <div class="container-form">
+      <ul class="nav nav-tabs" id="wizard" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="ingresatusdatoscliente-tab" data-bs-toggle="tab"
+            data-bs-target="#ingresatusdatoscliente" type="button" role="tab" aria-controls="ingresatusdatoscliente"
+            aria-selected="true">Ingresa tus datos de cliente <i class="bi bi-check-circle-fill"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="datosparatuoperatividad-tab" data-bs-toggle="tab"
+            data-bs-target="#datosparatuoperatividad" type="button" role="tab" aria-controls="datosparatuoperatividad"
+            aria-selected="false">Datos para tu operatividad <i class="bi bi-check-circle-fill"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="datosadicionales-tab" data-bs-toggle="tab" data-bs-target="#datosadicionales"
+            type="button" role="tab" aria-controls="datosadicionales" aria-selected="false">Datos adicionales <i
+              class="bi bi-check-circle-fill"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="suscuentasbancarias-tab" data-bs-toggle="tab"
+            data-bs-target="#suscuentasbancarias" type="button" role="tab" aria-controls="suscuentasbancarias"
+            aria-selected="false">Sus cuentas bancarias<i class="bi bi-check-circle-fill"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="politicasycondiciones-tab" data-bs-toggle="tab"
+            data-bs-target="#politicasycondiciones" type="button" role="tab" aria-controls="politicasycondiciones"
+            aria-selected="false">Políticas y condiciones<i class="bi bi-check-circle-fill"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="tabgeneral">
+        <div class="tab-pane fade show active" id="ingresatusdatoscliente" role="tabpanel"
+          aria-labelledby="ingresatusdatoscliente-tab">
+          <div class="card mt-3 px-4">
+            <div class="card-body">
+              <app-ingresatusdatosdecliente></app-ingresatusdatosdecliente>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="datosparatuoperatividad" role="tabpanel" aria-labelledby="datosparatuoperatividad-tab">
+          <div class="card mt-3 px-4">
+            <div class="card-body">
+              <app-datosparatuoperatividad></app-datosparatuoperatividad>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="datosadicionales" role="tabpanel" aria-labelledby="datosadicionales-tab">
+          <div class="card mt-3 px-4">
+            <div class="card-body">
+              <app-datosadicionales></app-datosadicionales>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="suscuentasbancarias" role="tabpanel" aria-labelledby="suscuentasbancarias-tab">
+          <div class="card mt-3 px-4">
+            <div class="card-body">
+              <app-suscuentasbancarias></app-suscuentasbancarias>
+            </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="politicasycondiciones" role="tabpanel" aria-labelledby="politicasycondiciones-tab">
+          <div class="card mt-3 px-4">
+            <div class="card-body">
+              <app-politicasycondiciones></app-politicasycondiciones>
+            </div>
+            </div>
+        </div>
+      </div>
+      <!-- <div class="row d-flex justify-content-end">
+          <div class="col-2">
+            <div class="d-grid gap-2">
+              <button class="btn btn-success" type="button">Continuar</button>
+            </div>
+          </div>
+        </div> -->
+    </div>
+  </div>
+</div>

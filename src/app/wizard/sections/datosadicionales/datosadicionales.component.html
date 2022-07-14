@@ -1,0 +1,449 @@
+<div class="row g-3 mt-2 mb-4">
+    <div class="col-12">
+        <label class="form-label">¿Tienes residencia fiscal o tributaria en otros paises?</label>
+        <div class="d-block">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="vinculado" id="si" value="1">
+                <label class="form-check-label" for="si">Si</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="vinculado" id="no" value="2">
+                <label class="form-check-label" for="no">No</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row g-3 mt-2 mb-4">
+    <div class="col-6">
+        <label class="fw-bold">Indicar el(los) pais(es) y el NIT en cada país</label>
+        <table class="table table-bordered mt-2 mb-0">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">País</th>
+                    <th scope="col">NIT</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center align-middle">
+                    <td>Perú</td>
+                    <td>98988987</td>
+                    <td>
+                        <button type="button" class="btn btn-danger p-2">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <select class="form-select">
+                            <option disabled selected>Seleccione Páis</option>
+                            <option value="1">Perú</option>
+                            <option value="2">Colombia</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" name="numerocuenta">
+                    </td>
+
+                    <td>
+                        <button class="btn btn-sm btn-success" type="button">Agregar</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="clear m-0"></div>
+    <div class="col-2">
+        <label class="form-label" for="Fecha">SSN</label>
+        <input type="text" class="form-control">
+    </div>
+
+    <div class="col-2">
+        <label class="form-label" for="Fecha">EIN</label>
+        <input type="text" class="form-control">
+    </div>
+</div>
+<div class="row g-3 mt-2 mb-4">
+    <div class="col-3">
+        <label class="form-label">¿Cargo Público Ult. 5 años?</label>
+        <div class="d-block">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="firma" id="si3" value="1">
+                <label class="form-check-label" for="si3">Si</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="firma" id="no3" value="2">
+                <label class="form-check-label" for="no3">No</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row g-3 mt-2 mb-4">
+    <label class="mb-0 fw-bold">Ficha PEP</label>
+    <div class="col-4">
+        <label class="form-label" for="nombreinbstitucion">Nombre Institución (Entidad)</label>
+        <input type="text" class="form-control" name="nombreinbstitucion">
+    </div>
+    <div class="col-2">
+        <label class="form-label" for="cargo">Cargo</label>
+        <input type="text" class="form-control" name="cargo">
+    </div>
+    <div class="col-2">
+        <label class="form-label" for="cargo">Procedencia de Ingresos</label>
+        <input type="text" class="form-control" name="cargo">
+    </div>
+    <div class="col-2">
+        <label class="form-label" for="cargo">Monto ingresos</label>
+        <input type="text" class="form-control" name="cargo">
+    </div>
+    <div class="col-2">
+        <label class="form-label" for="cargo">Origen fondo</label>
+        <input type="text" class="form-control" name="cargo">
+    </div>
+    <div class="col-3">
+        <label class="form-label" for="nacionalidad">Páis donde desempeña función</label>
+        <select class="form-select">
+            <option disabled selected>Seleccione</option>
+            <option value="1">Perú</option>
+            <option value="2">Colombia</option>
+            <option value="3">Argentina</option>
+        </select>
+    </div>
+    <div class="col-2">
+        <label class="form-label" for="paterno">Fecha inicio</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-2">
+        <label class="form-label" for="paterno">Fecha cese</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-2">
+        <label class="form-label">Administra recursos</label>
+        <div class="d-block">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="firma" id="si3" value="1">
+                <label class="form-check-label" for="si3">Si</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="firma" id="no3" value="2">
+                <label class="form-check-label" for="no3">No</label>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+<div class="row g-3 mt-2 mb-5">
+    <label class="mb-0 fw-bold">Datos parentesco (Declarante)</label>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Padre</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Madre</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="clear"></div>
+    <div class="col-6">
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Nombre hijo</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center align-middle">
+                    <td>Luchito Perez</td>
+                    <td>
+                        <button type="button" class="btn btn-danger p-2">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" name="numerocuenta">
+                    </td>
+
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-success" type="button">Agregar</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="clear"></div>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Abuelo línea paterna</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Abuela línea paterna</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Abuelo línea materna</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Abuela línea materna</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="clear"></div>
+    <div class="col-6">
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Nombre nietos</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center align-middle">
+                    <td>Luchito Perez</td>
+                    <td>
+                        <button type="button" class="btn btn-danger p-2">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" name="numerocuenta">
+                    </td>
+
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-success" type="button">Agregar</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="col-6">
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Nombre hermanos</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center align-middle">
+                    <td>Luchito Perez</td>
+                    <td>
+                        <button type="button" class="btn btn-danger p-2">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" name="numerocuenta">
+                    </td>
+
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-success" type="button">Agregar</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</div>
+
+
+<div class="row g-3 mt-2 mb-5">
+    <label class="mb-0 fw-bold">Datos parentesco (Conyuge)</label>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Padre</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Madre</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="clear"></div>
+    <div class="col-6">
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Nombre hijo</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center align-middle">
+                    <td>Luchito Perez</td>
+                    <td>
+                        <button type="button" class="btn btn-danger p-2">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" name="numerocuenta">
+                    </td>
+
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-success" type="button">Agregar</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="clear"></div>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Abuelo línea paterna</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Abuela línea paterna</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Abuelo línea materna</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-3">
+        <label class="form-label" for="paterno">Abuela línea materna</label>
+        <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="clear"></div>
+    <div class="col-6">
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Nombre nietos</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center align-middle">
+                    <td>Luchito Perez</td>
+                    <td>
+                        <button type="button" class="btn btn-danger p-2">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" name="numerocuenta">
+                    </td>
+
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-success" type="button">Agregar</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="col-6">
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Nombre hermanos</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center align-middle">
+                    <td>Luchito Perez</td>
+                    <td>
+                        <button type="button" class="btn btn-danger p-2">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" name="numerocuenta">
+                    </td>
+
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-success" type="button">Agregar</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</div>
+
+<div class="row g-3 mt-2 mb-5">
+    <label class="mb-0 fw-bold">Participación Juridica (Mayor 5%)</label>
+    <div class="col-10">
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">Razón Social</th>
+                    <th scope="col">Número Documento (Ruc u Otros)</th>
+                    <th scope="col">% Participación</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center align-middle">
+                    <td>Globant perú SAC</td>
+                    <td>2089934989</td>
+                    <td>20%</td>
+                    <td>
+                        <button type="button" class="btn btn-danger p-2">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="text" class="form-control" name="numerocuenta">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" name="numerocuenta">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" name="numerocuenta">
+                    </td>
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-success" type="button">Agregar</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<div class="row mt-5 pt-5 pb-5">
+    <div class="col-4">
+
+    </div>
+    <div class="col-2">
+      <button class="btn btn-primary w-100">Atras</button>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-success w-100">Siguiente</button>
+    </div>
+  </div>

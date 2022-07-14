@@ -1,0 +1,254 @@
+<form [formGroup]="frmData" (ngSubmit)="onSubmit()">
+  <div class="row g-3 mt-2 mb-5">
+    <div class="col-2">
+      <label class="form-label" for="idcpaterno">Apellido Paterno</label>
+      <input type="text" class="form-control" name="idcpaterno" id="idcpaterno" formControlName="idcpaterno">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcmaterno">Apellido Materno</label>
+      <input type="text" class="form-control" name="idcmaterno" id="idcmaterno" formControlName="idcmaterno">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcnombres">Nombres</label>
+      <input type="text" class="form-control" name="idcnombres" id="idcnombres" formControlName="idcnombres">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idctipodocumento">Tipo documento</label>
+      <select class="form-select" name="idctipodocumento" id="idctipodocumento" formControlName="idctipodocumento">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Dni</option>
+        <option value="2">Pasaporte</option>
+        <option value="3">Carnet de extranjeria</option>
+      </select>
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcnrodocumento">Número documento</label>
+      <input type="text" class="form-control" name="idcnrodocumento" id="idcnrodocumento" formControlName="idcnrodocumento">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcfechanacimiento">Fecha nacimiento</label>
+      <input type="text" class="form-control" name="idcfechanacimiento" id="idcfechanacimiento" formControlName="idcfechanacimiento">
+    </div>
+    <div class="col-4">
+      <label class="form-label" for="idccorreo">Correo</label>
+      <input type="text" class="form-control" name="idccorreo" id="idccorreo" formControlName="idccorreo">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcteloficina">Telf. Oficina</label>
+      <input type="text" class="form-control" name="idcteloficina" id="idcteloficina" formControlName="idcteloficina">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcteldomicilio">Telf. Domicilio</label>
+      <input type="text" class="form-control" name="idcteldomicilio" id="idcteldomicilio" formControlName="idcteldomicilio">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idctelcelular">Telf. Celular</label>
+      <input type="text" class="form-control" name="idctelcelular" id="idctelcelular" formControlName="idctelcelular">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcgradoinstruccion">Grado Instrucción</label>
+      <select class="form-select" name="idcgradoinstruccion" id="idcgradoinstruccion" formControlName="idcgradoinstruccion">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Primaria</option>
+        <option value="2">Secundaria</option>
+        <option value="3">Técnico</option>
+        <option value="4">Superior</option>
+      </select>
+    </div>
+    <div class="col-4">
+      <label class="form-label" for="idcdomicilio">Domicilio</label>
+      <input type="text" class="form-control" name="idcdomicilio" id="idcdomicilio" formControlName="idcdomicilio">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcdepartamento">Departamento</label>
+      <select class="form-select" name="idcdepartamento" id="idcdepartamento" formControlName="idcdepartamento">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Lince</option>
+        <option value="2">San Isidro</option>
+        <option value="3">Jesus Maria</option>
+      </select>
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcprovincia">Provincia</label>
+      <select class="form-select" name="idcprovincia" id="idcprovincia" formControlName="idcprovincia">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Lince</option>
+        <option value="2">San Isidro</option>
+        <option value="3">Jesus Maria</option>
+      </select>
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcdistrito">Distrito</label>
+      <select class="form-select" name="idcdistrito" id="idcdistrito" formControlName="idcdistrito">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Lince</option>
+        <option value="2">San Isidro</option>
+        <option value="3">Jesus Maria</option>
+      </select>
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcfecharegistro">Fecha de registro</label>
+      <input type="text" class="form-control" name="idcfecharegistro" id="idcfecharegistro" formControlName="idcfecharegistro">
+    </div>
+    <div class="col-4">
+      <label class="form-label" for="idclugarnacimiento">Lugar nacimiento</label>
+      <input type="text" class="form-control" name="idclugarnacimiento" id="idclugarnacimiento" formControlName="idclugarnacimiento">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcnacionalidad">Nacionalidad</label>
+      <select class="form-select" name="idcnacionalidad" id="idcnacionalidad" formControlName="idcnacionalidad">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Peruana</option>
+        <option value="2">Extranjero</option>
+        <option value="3">Marciano</option>
+      </select>
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcpaisdomicilio">Páis domicilio</label>
+      <select class="form-select" name="idcpaisdomicilio" id="idcpaisdomicilio" formControlName="idcpaisdomicilio">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Lince</option>
+        <option value="2">San Isidro</option>
+        <option value="3">Jesus Maria</option>
+      </select>
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcpaisresidencia">Páis residencia</label>
+      <select class="form-select" name="idcpaisresidencia" id="idcpaisresidencia" formControlName="idcpaisresidencia">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Lince</option>
+        <option value="2">San Isidro</option>
+        <option value="3">Jesus Maria</option>
+      </select>
+    </div>
+    <div class="col-2">
+      <label class="form-label">Tipo Domiciliado</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="idctipodomiciliado" id="idctipodomiciliado-si" value="1" formControlName="idctipodomiciliado">
+          <label class="form-check-label" for="idctipodomiciliado-si">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="idctipodomiciliado" id="idctipodomiciliado-no" value="2" formControlName="idctipodomiciliado">
+          <label class="form-check-label" for="idctipodomiciliado-no">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idcprofesionuocupacion">Profesión u ocupación</label>
+      <input type="text" class="form-control" name="idcprofesionuocupacion" id="idcprofesionuocupacion" formControlName="idcprofesionuocupacion">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idccentrolaboral">Centro laboral</label>
+      <input type="text" class="form-control" name="idccentrolaboral" id="idccentrolaboral" formControlName="idccentrolaboral">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idccargo">Cargo</label>
+      <input type="text" class="form-control" name="idccargo" id="idccargo" formControlName="idccargo">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="idctiemposervicio">Tiempo de servicio</label>
+      <input type="number" class="form-control" name="idctiemposervicio" id="idctiemposervicio" formControlName="idctiemposervicio">
+    </div>
+    <div class="clear m-0"></div>
+    <div class="col-2">
+      <label class="form-label" for="idcestadocivil">Estado civil</label>
+      <select class="form-select" name="idcestadocivil" id="idcestadocivil" formControlName="idcestadocivil">
+        <option disabled selected>Seleccione</option>
+        <option value="soltero">Soltero</option>
+        <option value="casado">Casado</option>
+        <option value="divorciado">Divorciado</option>
+      </select>
+    </div>
+
+    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
+      <label class="form-label" for="idcnombreconyuge">Nombre completo conyuge</label>
+      <input type="text" class="form-control" name="idcnombreconyuge" id="idcnombreconyuge" formControlName="idcnombreconyuge">
+    </div>
+    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
+      <label class="form-label" for="idctipodocumentoconyuge">Tipo documento</label>
+      <select class="form-select" name="idctipodocumentoconyuge" id="idctipodocumentoconyuge" formControlName="idctipodocumentoconyuge">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Dni</option>
+        <option value="2">Pasaporte</option>
+        <option value="3">Carnet de extranjeria</option>
+      </select>
+    </div>
+    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
+      <label class="form-label" for="idcnrodocumentoconyuge">Número documento</label>
+      <input type="text" class="form-control" name="idcnrodocumentoconyuge" id="idcnrodocumentoconyuge" formControlName="idcnrodocumentoconyuge">
+    </div>
+    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
+      <label class="form-label" for="idcregimenpatrimonialconyuge">Regimen Patrimonial</label>
+      <select class="form-select" name="idcregimenpatrimonialconyuge" id="idcregimenpatrimonialconyuge" formControlName="idcregimenpatrimonialconyuge">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Opcion 1</option>
+        <option value="2">Opcion 2</option>
+        <option value="3">Opcion 3</option>
+      </select>
+    </div>
+    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
+      <label class="form-label" for="idcnropartidaconyuge">Nro partida</label>
+      <input type="text" class="form-control" name="idcnropartidaconyuge" id="idcnropartidaconyuge" formControlName="idcnropartidaconyuge">
+    </div>
+
+
+    <div class="col-2">
+      <label class="form-label">¿Actúa por Cuenta Propia?</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="idcactuaporcuentapropia" id="idcactuaporcuentapropia-si"
+            [value]="true" formControlName="idcactuaporcuentapropia">
+          <label class="form-check-label" for="idcactuaporcuentapropia-si">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="idcactuaporcuentapropia" id="idcactuaporcuentapropia-no"
+            [value]="false" formControlName="idcactuaporcuentapropia">
+          <label class="form-check-label" for="idcactuaporcuentapropia-no">No</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
+      <label class="form-label" for="idcacuentadequienactua">A cuenta de quien actua</label>
+      <input type="text" class="form-control" name="idcacuentadequienactua" id="idcacuentadequienactua" formControlName="idcacuentadequienactua">
+    </div>
+    <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
+      <label class="form-label" for="idcacuentadequienactuanombreyapellido">Nombre y Apellido</label>
+      <input type="text" class="form-control" name="idcacuentadequienactuanombreyapellido"
+        id="idcacuentadequienactuanombreyapellido" formControlName="idcacuentadequienactuanombreyapellido">
+    </div>
+    <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
+      <label class="form-label" for="idcacuentadequienactuanropartidaregistral">Número Partida Registral</label>
+      <input type="text" class="form-control" name="idcacuentadequienactuanropartidaregistral"
+        id="idcacuentadequienactuanropartidaregistral" formControlName="idcacuentadequienactuanropartidaregistral">
+    </div>
+    <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
+      <label class="form-label" for="idcacuentadequienactuatipodocumento">Tipo documento</label>
+      <select class="form-select" name="idcacuentadequienactuatipodocumento"
+        id="idcacuentadequienactuatipodocumento" formControlName="idcacuentadequienactuatipodocumento">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Dni</option>
+        <option value="2">Pasaporte</option>
+        <option value="3">Carnet de extranjeria</option>
+      </select>
+    </div>
+    <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
+      <label class="form-label" for="idcacuentadequienactuanrodocumento">Número documento</label>
+      <input type="text" class="form-control" name="idcacuentadequienactuanrodocumento"
+        id="idcacuentadequienactuanrodocumento" formControlName="idcacuentadequienactuanrodocumento">
+    </div>
+
+  </div>
+  <div class="row mt-5 pt-5 pb-5">
+    <div class="col-4">
+
+    </div>
+    <div class="col-2">
+      <button class="btn btn-primary w-100" disabled>Atras</button>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-success w-100">Siguiente</button>
+    </div>
+  </div>
+</form>
