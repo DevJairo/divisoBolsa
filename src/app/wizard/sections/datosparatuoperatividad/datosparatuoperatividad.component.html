@@ -1,0 +1,333 @@
+<!-- <form [formGroup]="frmData" (ngSubmit)="onSubmit()">
+  <div class="row g-3 mt-2 mb-2">
+    <label class="mb-0 fw-bold">Medios de ejecución de órdenes</label>
+    <div class="col-2">
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="dpoordenaccesoweb" id="dpoordenaccesoweb" [value]="true"
+            formControlName="dpoordenaccesoweb">
+          <label class="form-check-label" for="dpoordenaccesoweb">Por acceso web</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="dpoordentelefono" id="dpoordentelefono" [value]="true"
+            formControlName="dpoordentelefono">
+          <label class="form-check-label" for="dpoordentelefono">Por teléfono</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="dpoordenescrito" id="dpoordenescrito" [value]="true"
+            formControlName="dpoordenescrito">
+          <label class="form-check-label" for="dpoordenescrito">Por escrito</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="dpordenotros" id="dpordenotros" [value]="true"
+            formControlName="dpordenotros">
+          <label class="form-check-label" for="dpordenotros">Por Otros</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row g-3 mt-2 mb-2">
+    <label class="mb-0 fw-bold">Su experiencia en inversiones</label>
+    <div class="col-2">
+      <label class="form-label">He invertido antes en valores</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dpoinvertidoenvalores" id="dpoinvertidoenvalores-si"
+            [value]="true" formControlName="dpoinvertidoenvalores">
+          <label class="form-check-label" for="dpoinvertidoenvalores-si">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dpoinvertidoenvalores" id="dpoinvertidoenvalores-no"
+            [value]="false" formControlName="dpoinvertidoenvalores">
+          <label class="form-check-label" for="dpoinvertidoenvalores-no">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-2" *ngIf="frmData.value.dpoinvertidoenvalores && frmData.value.dpoinvertidoenvalores != null">
+      <label class="form-label">En Renta Fija</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dporentafija" id="dporentafija-si" [value]="true"
+            formControlName="dporentafija">
+          <label class="form-check-label" for="dporentafija-si">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dporentafija" id="dporentafija-no" [value]="false"
+            formControlName="dporentafija">
+          <label class="form-check-label" for="dporentafija-no">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-2" *ngIf="frmData.value.dpoinvertidoenvalores && frmData.value.dpoinvertidoenvalores != null">
+      <label class="form-label">En Renta Variable</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dporentavariable" id="dporentavariable-si" [value]="true"
+            formControlName="dporentavariable">
+          <label class="form-check-label" for="dporentavariable-si">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dporentavariable" id="dporentavariable-no" [value]="false"
+            formControlName="dporentavariable">
+          <label class="form-check-label" for="dporentavariable-no">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-2" *ngIf="frmData.value.dpoinvertidoenvalores && frmData.value.dpoinvertidoenvalores != null">
+      <label class="form-label">En Derivados</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dpoenderivados" id="dpoenderivados-si" [value]="true"
+            formControlName="dpoenderivados">
+          <label class="form-check-label" for="dpoenderivados-si">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dpoenderivados" id="dpoenderivados-no" [value]="false"
+            formControlName="dpoenderivados">
+          <label class="form-check-label" for="dpoenderivados-no">No</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row g-3 mt-2 mb-2">
+    <label class="mb-0 fw-bold">Datos adicionales</label>
+    <div class="col-2">
+      <label class="form-label" for="dpoaccesoaeecc">Acceso a EECC</label>
+      <select class="form-select" name="dpoaccesoaeecc" id="dpoaccesoaeecc" formControlName="dpoaccesoaeecc">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Acceso Web</option>
+        <option value="2">Recoge SAB</option>
+        <option value="3">Email</option>
+        <option value="4">A domiclio</option>
+      </select>
+    </div>
+    <div class="col-2">
+      <label class="form-label">Administración de Cartera</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dpoadministracioncartera" id="dpoadministracioncartera-si"
+            [value]="true" formControlName="dpoadministracioncartera">
+          <label class="form-check-label" for="dpoadministracioncartera-si">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dpoadministracioncartera" id="dpoadministracioncartera-no"
+            [value]="false" formControlName="dpoadministracioncartera">
+          <label class="form-check-label" for="dpoadministracioncartera-no">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <label class="form-label">Intermediación Mercado Extanjero</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dpointermediacionmercadoextranjero"
+            id="dpointermediacionmercadoextranjero-si" [value]="true"
+            formControlName="dpointermediacionmercadoextranjero">
+          <label class="form-check-label" for="dpointermediacionmercadoextranjero-si">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="firma" id="dpointermediacionmercadoextranjero-no"
+            [value]="false" formControlName="dpointermediacionmercadoextranjero">
+          <label class="form-check-label" for="dpointermediacionmercadoextranjero-no">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <label class="form-label">Inversión Derivados</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dpoinversionderivados" formControlName="dpoinversionderivados">
+          <label class="form-check-label" for="dpoinversionderivados-si">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dpoinversionderivados" formControlName="dpoinversionderivados">
+          <label class="form-check-label" for="dpoinversionderivados-no">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="dpotuperfil">Tu perfil</label>
+      <select class="form-select" name="dpotuperfil" id="dpotuperfil" formControlName="dpotuperfil">
+        <option disabled selected>Seleccione</option>
+        <option value="1">Conservador</option>
+        <option value="2">Moderado</option>
+        <option value="3">Agresivo</option>
+      </select>
+    </div>
+  </div>
+  <div class="row g-3 mt-2 mb-2">
+    <label class="mb-0 fw-bold">Datos del contrato</label>
+    <div class="col-3">
+      <label class="form-label" for="dpotipopropiedad">Tipo de propiedad</label>
+      <div class="d-flex">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" formControlName="dpotipopropiedad" value="individual"
+            id="dpotipopropiedadindividual" name="dpotipopropiedadindividual">
+          <label class="form-check-label" for="dpotipopropiedadindividual">Individual</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" formControlName="dpotipopropiedad" value="copropiedad"
+            id="dpotipopropiedadcopropiedad" name="dpotipopropiedadindividual">
+          <label class="form-check-label" for="dpotipopropiedadcopropiedad">Copropiedad</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <label class="form-label">Vinculado</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dpovinculado" id="dpovinculado-si"
+            formControlName="dpovinculado">
+          <label class="form-check-label" for="dpovinculado-si">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="dpovinculado" id="dpovinculado-no"
+            formControlName="dpovinculado">
+          <label class="form-check-label" for="dpovinculado-no">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <label class="form-label">¿Es inversionista institucional?</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" formControlName="dpoinversionistainstitucional" id="dpoinversionistainstitucional-si" name="dpoinversionistainstitucional">
+          <label class="form-check-label" for="dpoinversionistainstitucional-si">Si</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" formControlName="dpoinversionistainstitucional" id="dpoinversionistainstitucional-no" name="dpoinversionistainstitucional">
+          <label class="form-check-label" for="dpoinversionistainstitucional-no">No</label>
+        </div>
+      </div>
+    </div>
+    <div class="clear m-0"></div>
+    <div class="col-2" *ngIf="frmData.value.dpotipopropiedad == 'copropiedad'">
+      <label class="form-label">Porcentaje</label>
+      <input type="text" class="form-control" formControlName="dpoporcentaje" name="dpoporcentaje" id="dpoporcentaje">
+    </div>
+    <div class="col-3" *ngIf="frmData.value.dpotipopropiedad == 'copropiedad'">
+      <label class="form-label" for="tipopropiedad">Tipo de Firma</label>
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" formControlName="dpotipofirma" value="conjunta"
+            name="dpoporcentaje" id="dpoporcentaje-si">
+          <label class="form-check-label" for="dpoporcentaje-si">Conjunta</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" formControlName="dpotipofirma" value="individual"
+            name="dpoporcentaje" id="dpoporcentaje-no">
+          <label class="form-check-label" for="dpoporcentaje-no">Individual</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row g-3 mt-2 mb-2" *ngIf="frmData.value.dpoinversionistainstitucional && frmData.value.dpoinversionistainstitucional != null">
+    <label class="mb-0 fw-bold">Declaración Jurada Inversionista Institucional</label>
+    <div class="col-3">
+      <label class="form-label" for="paterno">En representación de</label>
+      <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="paterno">Partida Electrónica</label>
+      <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-3">
+      <label class="form-label" for="paterno">Registro de:</label>
+      <input type="text" class="form-control" name="paterno">
+    </div>
+    <div class="col-2">
+      <label class="form-label" for="paterno">Ciudad de registro</label>
+      <input type="text" class="form-control" name="paterno">
+    </div>
+    <label class="mb-0 fw-bold">Elije el tipo de cliente institucional</label>
+    <div class="col-3">
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ordenaccesoweb" id="ordenaccesoweb" value="1">
+          <label class="form-check-label" for="ordenaccesoweb">Tipo1 de cliente institucional (Texto 1)</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ordenaccesoweb" id="ordenaccesoweb" value="1">
+          <label class="form-check-label" for="ordenaccesoweb">Tipo2 de cliente institucional (Texto 2)</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ordenaccesoweb" id="ordenaccesoweb" value="1">
+          <label class="form-check-label" for="ordenaccesoweb">Tipo3 de cliente institucional (Texto 3)</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ordenaccesoweb" id="ordenaccesoweb" value="1">
+          <label class="form-check-label" for="ordenaccesoweb">Tipo4 de cliente institucional (Texto 4)</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ordenaccesoweb" id="ordenaccesoweb" value="1">
+          <label class="form-check-label" for="ordenaccesoweb">Tipo5 de cliente institucional (Texto 5)</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="d-block">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="ordenaccesoweb" id="ordenaccesoweb" value="1">
+          <label class="form-check-label" for="ordenaccesoweb">Tipo6 de cliente institucional (Texto 5)</label>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="row mt-5 pt-5 pb-5">
+    <div class="col-4">
+
+    </div>
+    <div class="col-2">
+      <button class="btn btn-primary w-100">Atras</button>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-success w-100">Siguiente</button>
+    </div>
+  </div>
+</form> -->
+
+<form (ngSubmit)="onSubmit()">
+  <div class="row mt-5 pt-5 pb-5">
+    <div class="col-4">
+
+    </div>
+    <div class="col-2">
+      <a class="btn btn-primary w-100" (click)="backSection()">Atras</a>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-success w-100" type="submit">Siguiente</button>
+    </div>
+  </div>
+</form>

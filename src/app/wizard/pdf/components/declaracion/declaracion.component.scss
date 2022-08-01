@@ -1,0 +1,30 @@
+#pdf1 {
+    color: #000;
+    max-width: 750px;
+    text-align: justify;
+    margin: auto;
+  
+    h2 {
+      font-size: 13px;
+      font-weight: bold;
+      padding-top: 30px;
+    }
+  
+    .body-pdf {
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 1.5;
+      word-spacing: 0.1em;
+  
+      .content-input {
+        input {
+          width: 70px;
+          margin: 0 20px;
+          height: 40px;
+          border: solid 2px #00e300;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  

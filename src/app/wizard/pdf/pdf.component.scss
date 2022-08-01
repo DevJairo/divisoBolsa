@@ -1,0 +1,34 @@
+::ng-deep body {
+  padding-top: 0px !important;
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+  
+}
+::ng-deep *{ print-color-adjust: exact;  -webkit-print-color-adjust: exact; print-color-adjust: exact;}
+.container {
+  position: relative;
+}
+
+
+
+@media print {
+  body {
+    // margin: 0 !important;
+    // padding: 0 !important;
+    margin:-23px -40px 0 !important;
+  }
+  // #pdf1 {
+  //   display: none;
+  // }
+  .btn-success {
+    display: none;
+  }
+  div.saltopagina {
+    display: block;
+    page-break-before: always;
+  }
+
+  hr {
+    display: none;
+  }
+}
