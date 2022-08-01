@@ -3,57 +3,33 @@
     <div class="container-form">
       <ul class="nav nav-tabs" id="wizard" role="tablist">
         <li class="nav-item" role="presentation">
-<<<<<<< HEAD
           <button class="nav-link" disabled [ngClass]="{ 'active': (data$ | async)?.tabmostrar == 1 }" id="ingresatusdatoscliente-tab" data-bs-toggle="tab"
-=======
-          <button class="nav-link active" id="ingresatusdatoscliente-tab" data-bs-toggle="tab"
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
             data-bs-target="#ingresatusdatoscliente" type="button" role="tab" aria-controls="ingresatusdatoscliente"
             aria-selected="true">Ingresa tus datos de cliente <i class="bi bi-check-circle-fill"></i></button>
         </li>
         <li class="nav-item" role="presentation">
-<<<<<<< HEAD
           <button disabled class="nav-link" [ngClass]="{ 'active': (data$ | async)?.tabmostrar == 2 }" id="datosparatuoperatividad-tab" data-bs-toggle="tab"
-=======
-          <button class="nav-link" id="datosparatuoperatividad-tab" data-bs-toggle="tab"
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
             data-bs-target="#datosparatuoperatividad" type="button" role="tab" aria-controls="datosparatuoperatividad"
             aria-selected="false">Datos para tu operatividad <i class="bi bi-check-circle-fill"></i></button>
         </li>
         <li class="nav-item" role="presentation">
-<<<<<<< HEAD
           <button disabled class="nav-link" [ngClass]="{ 'active': (data$ | async)?.tabmostrar == 3 }" id="datosadicionales-tab" data-bs-toggle="tab" data-bs-target="#datosadicionales"
-=======
-          <button class="nav-link" id="datosadicionales-tab" data-bs-toggle="tab" data-bs-target="#datosadicionales"
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
             type="button" role="tab" aria-controls="datosadicionales" aria-selected="false">Datos adicionales <i
               class="bi bi-check-circle-fill"></i></button>
         </li>
         <li class="nav-item" role="presentation">
-<<<<<<< HEAD
           <button disabled class="nav-link" [ngClass]="{ 'active': (data$ | async)?.tabmostrar == 4 }" id="suscuentasbancarias-tab" data-bs-toggle="tab"
-=======
-          <button class="nav-link" id="suscuentasbancarias-tab" data-bs-toggle="tab"
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
             data-bs-target="#suscuentasbancarias" type="button" role="tab" aria-controls="suscuentasbancarias"
             aria-selected="false">Sus cuentas bancarias<i class="bi bi-check-circle-fill"></i></button>
         </li>
         <li class="nav-item" role="presentation">
-<<<<<<< HEAD
           <button disabled class="nav-link" [ngClass]="{ 'active': (data$ | async)?.tabmostrar == 5 }" id="politicasycondiciones-tab" data-bs-toggle="tab"
-=======
-          <button class="nav-link" id="politicasycondiciones-tab" data-bs-toggle="tab"
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
             data-bs-target="#politicasycondiciones" type="button" role="tab" aria-controls="politicasycondiciones"
             aria-selected="false">Políticas y condiciones<i class="bi bi-check-circle-fill"></i></button>
         </li>
       </ul>
       <div class="tab-content" id="tabgeneral">
-<<<<<<< HEAD
         <div class="tab-pane fade" [ngClass]="{ 'show': (data$ | async)?.tabmostrar == 1, 'active': (data$ | async)?.tabmostrar == 1 }" [ngClass]="{ 'show active': (data$ | async)?.tabmostrar == 1 }" id="ingresatusdatoscliente" role="tabpanel"
-=======
-        <div class="tab-pane fade show active" id="ingresatusdatoscliente" role="tabpanel"
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
           aria-labelledby="ingresatusdatoscliente-tab">
           <div class="card mt-3 px-4">
             <div class="card-body">
@@ -61,44 +37,28 @@
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <div class="tab-pane fade" [ngClass]="{ 'show': (data$ | async)?.tabmostrar == 2, 'active': (data$ | async)?.tabmostrar == 2 }" id="datosparatuoperatividad" role="tabpanel" aria-labelledby="datosparatuoperatividad-tab">
-=======
-        <div class="tab-pane fade" id="datosparatuoperatividad" role="tabpanel" aria-labelledby="datosparatuoperatividad-tab">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
           <div class="card mt-3 px-4">
             <div class="card-body">
               <app-datosparatuoperatividad></app-datosparatuoperatividad>
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <div class="tab-pane fade" [ngClass]="{ 'show': (data$ | async)?.tabmostrar == 3, 'active': (data$ | async)?.tabmostrar == 3 }" id="datosadicionales" role="tabpanel" aria-labelledby="datosadicionales-tab">
-=======
-        <div class="tab-pane fade" id="datosadicionales" role="tabpanel" aria-labelledby="datosadicionales-tab">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
           <div class="card mt-3 px-4">
             <div class="card-body">
               <app-datosadicionales></app-datosadicionales>
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <div class="tab-pane fade" [ngClass]="{ 'show': (data$ | async)?.tabmostrar == 4, 'active': (data$ | async)?.tabmostrar == 4 }" id="suscuentasbancarias" role="tabpanel" aria-labelledby="suscuentasbancarias-tab">
-=======
-        <div class="tab-pane fade" id="suscuentasbancarias" role="tabpanel" aria-labelledby="suscuentasbancarias-tab">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
           <div class="card mt-3 px-4">
             <div class="card-body">
               <app-suscuentasbancarias></app-suscuentasbancarias>
             </div>
             </div>
         </div>
-<<<<<<< HEAD
         <div class="tab-pane fade" [ngClass]="{ 'show': (data$ | async)?.tabmostrar == 5, 'active': (data$ | async)?.tabmostrar == 5 }" id="politicasycondiciones" role="tabpanel" aria-labelledby="politicasycondiciones-tab">
-=======
-        <div class="tab-pane fade" id="politicasycondiciones" role="tabpanel" aria-labelledby="politicasycondiciones-tab">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
           <div class="card mt-3 px-4">
             <div class="card-body">
               <app-politicasycondiciones></app-politicasycondiciones>

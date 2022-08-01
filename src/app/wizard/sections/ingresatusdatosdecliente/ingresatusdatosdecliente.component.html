@@ -1,7 +1,6 @@
 <form [formGroup]="frmData" (ngSubmit)="onSubmit()">
   <div class="row g-3 mt-2 mb-5">
     <div class="col-2">
-<<<<<<< HEAD
       <label class="form-label" for="idcpaterno" data-bs-toggle="tooltip" data-bs-placement="top" title="aqui texto a mostrar">Apellido Paterno</label>
       <input type="text" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.idcpaterno.errors }" name="idcpaterno" id="idcpaterno" formControlName="idcpaterno">
       <div class="invalid-feedback" *ngIf="submitted && f.idcpaterno.errors">
@@ -19,22 +18,6 @@
     <div class="col-2">
       <label class="form-label" for="idctipodocumento">Tipo documento</label>
       <select class="form-select" name="idctipodocumento" [ngClass]="{ 'is-invalid': submitted && f.idctipodocumento.errors }" id="idctipodocumento" formControlName="idctipodocumento">
-=======
-      <label class="form-label" for="idcpaterno">Apellido Paterno</label>
-      <input type="text" class="form-control" name="idcpaterno" id="idcpaterno" formControlName="idcpaterno">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcmaterno">Apellido Materno</label>
-      <input type="text" class="form-control" name="idcmaterno" id="idcmaterno" formControlName="idcmaterno">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcnombres">Nombres</label>
-      <input type="text" class="form-control" name="idcnombres" id="idcnombres" formControlName="idcnombres">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idctipodocumento">Tipo documento</label>
-      <select class="form-select" name="idctipodocumento" id="idctipodocumento" formControlName="idctipodocumento">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
         <option disabled selected>Seleccione</option>
         <option value="1">Dni</option>
         <option value="2">Pasaporte</option>
@@ -43,7 +26,6 @@
     </div>
     <div class="col-2">
       <label class="form-label" for="idcnrodocumento">Número documento</label>
-<<<<<<< HEAD
       <input type="text" class="form-control" name="idcnrodocumento" [ngClass]="{ 'is-invalid': submitted && f.idcnrodocumento.errors }" id="idcnrodocumento" formControlName="idcnrodocumento">
     </div>
     <div class="col-2">
@@ -60,10 +42,6 @@
     </div>
     <div class="col-2">
       <label class="form-label" for="idcteloficina">Telf. Oficina</label>
-      <input type="text" class="form-control" name="idcteloficina" [ngClass]="{ 'is-invalid': submitted && f.idcteloficina.errors }" id="idcteloficina" formControlName="idcteloficina">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcteldomicilio">Telf. Domicilio</label>
       <input type="text" class="form-control" name="idcteldomicilio" [ngClass]="{ 'is-invalid': submitted && f.idcteldomicilio.errors }" id="idcteldomicilio" formControlName="idcteldomicilio">
     </div>
     <div class="col-2">
@@ -73,136 +51,6 @@
     <div class="col-2">
       <label class="form-label" for="idcgradoinstruccion">Grado Instrucción</label>
       <select class="form-select" name="idcgradoinstruccion" id="idcgradoinstruccion" [ngClass]="{ 'is-invalid': submitted && f.idcgradoinstruccion.errors }" formControlName="idcgradoinstruccion">
-=======
-      <input type="text" class="form-control" name="idcnrodocumento" id="idcnrodocumento" formControlName="idcnrodocumento">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcfechanacimiento">Fecha nacimiento</label>
-      <input type="text" class="form-control" name="idcfechanacimiento" id="idcfechanacimiento" formControlName="idcfechanacimiento">
-    </div>
-    <div class="col-4">
-      <label class="form-label" for="idccorreo">Correo</label>
-      <input type="text" class="form-control" name="idccorreo" id="idccorreo" formControlName="idccorreo">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcteloficina">Telf. Oficina</label>
-      <input type="text" class="form-control" name="idcteloficina" id="idcteloficina" formControlName="idcteloficina">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcteldomicilio">Telf. Domicilio</label>
-      <input type="text" class="form-control" name="idcteldomicilio" id="idcteldomicilio" formControlName="idcteldomicilio">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idctelcelular">Telf. Celular</label>
-      <input type="text" class="form-control" name="idctelcelular" id="idctelcelular" formControlName="idctelcelular">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcgradoinstruccion">Grado Instrucción</label>
-      <select class="form-select" name="idcgradoinstruccion" id="idcgradoinstruccion" formControlName="idcgradoinstruccion">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
-        <option disabled selected>Seleccione</option>
-        <option value="1">Primaria</option>
-        <option value="2">Secundaria</option>
-        <option value="3">Técnico</option>
-        <option value="4">Superior</option>
-      </select>
-    </div>
-    <div class="col-4">
-      <label class="form-label" for="idcdomicilio">Domicilio</label>
-<<<<<<< HEAD
-      <input type="text" class="form-control" name="idcdomicilio" id="idcdomicilio" [ngClass]="{ 'is-invalid': submitted && f.idcdomicilio.errors }" formControlName="idcdomicilio">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcdepartamento">Departamento</label>
-      <select class="form-select" name="idcdepartamento" id="idcdepartamento" [ngClass]="{ 'is-invalid': submitted && f.idcdepartamento.errors }" formControlName="idcdepartamento">
-=======
-      <input type="text" class="form-control" name="idcdomicilio" id="idcdomicilio" formControlName="idcdomicilio">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcdepartamento">Departamento</label>
-      <select class="form-select" name="idcdepartamento" id="idcdepartamento" formControlName="idcdepartamento">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
-        <option disabled selected>Seleccione</option>
-        <option value="1">Lince</option>
-        <option value="2">San Isidro</option>
-        <option value="3">Jesus Maria</option>
-      </select>
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcprovincia">Provincia</label>
-<<<<<<< HEAD
-      <select class="form-select" name="idcprovincia" id="idcprovincia" [ngClass]="{ 'is-invalid': submitted && f.idcprovincia.errors }" formControlName="idcprovincia">
-=======
-      <select class="form-select" name="idcprovincia" id="idcprovincia" formControlName="idcprovincia">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
-        <option disabled selected>Seleccione</option>
-        <option value="1">Lince</option>
-        <option value="2">San Isidro</option>
-        <option value="3">Jesus Maria</option>
-      </select>
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcdistrito">Distrito</label>
-<<<<<<< HEAD
-      <select class="form-select" name="idcdistrito" id="idcdistrito" [ngClass]="{ 'is-invalid': submitted && f.idcdistrito.errors }" formControlName="idcdistrito">
-=======
-      <select class="form-select" name="idcdistrito" id="idcdistrito" formControlName="idcdistrito">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
-        <option disabled selected>Seleccione</option>
-        <option value="1">Lince</option>
-        <option value="2">San Isidro</option>
-        <option value="3">Jesus Maria</option>
-      </select>
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcfecharegistro">Fecha de registro</label>
-<<<<<<< HEAD
-      <input type="date" class="form-control" name="idcfecharegistro" id="idcfecharegistro" [ngClass]="{ 'is-invalid': submitted && f.idcfecharegistro.errors }" formControlName="idcfecharegistro">
-    </div>
-    <div class="col-4">
-      <label class="form-label" for="idclugarnacimiento">Lugar nacimiento</label>
-      <input type="text" class="form-control" name="idclugarnacimiento" id="idclugarnacimiento" [ngClass]="{ 'is-invalid': submitted && f.idclugarnacimiento.errors }" formControlName="idclugarnacimiento">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcnacionalidad">Nacionalidad</label>
-      <select class="form-select" name="idcnacionalidad" id="idcnacionalidad" [ngClass]="{ 'is-invalid': submitted && f.idcnacionalidad.errors }" formControlName="idcnacionalidad">
-=======
-      <input type="text" class="form-control" name="idcfecharegistro" id="idcfecharegistro" formControlName="idcfecharegistro">
-    </div>
-    <div class="col-4">
-      <label class="form-label" for="idclugarnacimiento">Lugar nacimiento</label>
-      <input type="text" class="form-control" name="idclugarnacimiento" id="idclugarnacimiento" formControlName="idclugarnacimiento">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcnacionalidad">Nacionalidad</label>
-      <select class="form-select" name="idcnacionalidad" id="idcnacionalidad" formControlName="idcnacionalidad">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
-        <option disabled selected>Seleccione</option>
-        <option value="1">Peruana</option>
-        <option value="2">Extranjero</option>
-        <option value="3">Marciano</option>
-      </select>
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcpaisdomicilio">Páis domicilio</label>
-<<<<<<< HEAD
-      <select class="form-select" name="idcpaisdomicilio" id="idcpaisdomicilio" [ngClass]="{ 'is-invalid': submitted && f.idcpaisdomicilio.errors }" formControlName="idcpaisdomicilio">
-=======
-      <select class="form-select" name="idcpaisdomicilio" id="idcpaisdomicilio" formControlName="idcpaisdomicilio">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
-        <option disabled selected>Seleccione</option>
-        <option value="1">Lince</option>
-        <option value="2">San Isidro</option>
-        <option value="3">Jesus Maria</option>
-      </select>
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idcpaisresidencia">Páis residencia</label>
-<<<<<<< HEAD
-      <select class="form-select" name="idcpaisresidencia" id="idcpaisresidencia" [ngClass]="{ 'is-invalid': submitted && f.idcpaisresidencia.errors }" formControlName="idcpaisresidencia">
-=======
-      <select class="form-select" name="idcpaisresidencia" id="idcpaisresidencia" formControlName="idcpaisresidencia">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
         <option disabled selected>Seleccione</option>
         <option value="1">Lince</option>
         <option value="2">San Isidro</option>
@@ -213,26 +61,17 @@
       <label class="form-label">Tipo Domiciliado</label>
       <div class="d-block">
         <div class="form-check form-check-inline">
-<<<<<<< HEAD
           <input class="form-check-input" type="radio" name="idctipodomiciliado" [ngClass]="{ 'is-invalid': submitted && f.idctipodomiciliado.errors }" value="1" formControlName="idctipodomiciliado">
           <label class="form-check-label" for="idctipodomiciliado-si">Si</label>
         </div>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="idctipodomiciliado" [ngClass]="{ 'is-invalid': submitted && f.idctipodomiciliado.errors }" value="2" formControlName="idctipodomiciliado">
-=======
-          <input class="form-check-input" type="radio" name="idctipodomiciliado" id="idctipodomiciliado-si" value="1" formControlName="idctipodomiciliado">
-          <label class="form-check-label" for="idctipodomiciliado-si">Si</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="idctipodomiciliado" id="idctipodomiciliado-no" value="2" formControlName="idctipodomiciliado">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
           <label class="form-check-label" for="idctipodomiciliado-no">No</label>
         </div>
       </div>
     </div>
     <div class="col-2">
       <label class="form-label" for="idcprofesionuocupacion">Profesión u ocupación</label>
-<<<<<<< HEAD
       <input type="text" class="form-control" name="idcprofesionuocupacion" id="idcprofesionuocupacion" [ngClass]="{ 'is-invalid': submitted && f.idcprofesionuocupacion.errors }" formControlName="idcprofesionuocupacion">
     </div>
     <div class="col-2">
@@ -246,30 +85,11 @@
     <div class="col-2">
       <label class="form-label" for="idctiemposervicio">Tiempo de servicio</label>
       <input type="number" class="form-control" name="idctiemposervicio" id="idctiemposervicio" [ngClass]="{ 'is-invalid': submitted && f.idctiemposervicio.errors }" formControlName="idctiemposervicio">
-=======
-      <input type="text" class="form-control" name="idcprofesionuocupacion" id="idcprofesionuocupacion" formControlName="idcprofesionuocupacion">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idccentrolaboral">Centro laboral</label>
-      <input type="text" class="form-control" name="idccentrolaboral" id="idccentrolaboral" formControlName="idccentrolaboral">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idccargo">Cargo</label>
-      <input type="text" class="form-control" name="idccargo" id="idccargo" formControlName="idccargo">
-    </div>
-    <div class="col-2">
-      <label class="form-label" for="idctiemposervicio">Tiempo de servicio</label>
-      <input type="number" class="form-control" name="idctiemposervicio" id="idctiemposervicio" formControlName="idctiemposervicio">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
     </div>
     <div class="clear m-0"></div>
     <div class="col-2">
       <label class="form-label" for="idcestadocivil">Estado civil</label>
-<<<<<<< HEAD
       <select class="form-select" name="idcestadocivil" id="idcestadocivil" (change)="remoValidatorEstadoCivil()" [ngClass]="{ 'is-invalid': submitted && f.idcestadocivil.errors }" formControlName="idcestadocivil">
-=======
-      <select class="form-select" name="idcestadocivil" id="idcestadocivil" formControlName="idcestadocivil">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
         <option disabled selected>Seleccione</option>
         <option value="soltero">Soltero</option>
         <option value="casado">Casado</option>
@@ -279,19 +99,11 @@
 
     <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
       <label class="form-label" for="idcnombreconyuge">Nombre completo conyuge</label>
-<<<<<<< HEAD
       <input type="text" class="form-control" name="idcnombreconyuge" id="idcnombreconyuge" [ngClass]="{ 'is-invalid': submitted && f.idcnombreconyuge.errors }" formControlName="idcnombreconyuge">
     </div>
     <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
       <label class="form-label" for="idctipodocumentoconyuge">Tipo documento</label>
       <select class="form-select" name="idctipodocumentoconyuge" id="idctipodocumentoconyuge" [ngClass]="{ 'is-invalid': submitted && f.idctipodocumentoconyuge.errors }" formControlName="idctipodocumentoconyuge">
-=======
-      <input type="text" class="form-control" name="idcnombreconyuge" id="idcnombreconyuge" formControlName="idcnombreconyuge">
-    </div>
-    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
-      <label class="form-label" for="idctipodocumentoconyuge">Tipo documento</label>
-      <select class="form-select" name="idctipodocumentoconyuge" id="idctipodocumentoconyuge" formControlName="idctipodocumentoconyuge">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
         <option disabled selected>Seleccione</option>
         <option value="1">Dni</option>
         <option value="2">Pasaporte</option>
@@ -300,19 +112,11 @@
     </div>
     <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
       <label class="form-label" for="idcnrodocumentoconyuge">Número documento</label>
-<<<<<<< HEAD
       <input type="text" class="form-control" name="idcnrodocumentoconyuge" id="idcnrodocumentoconyuge" [ngClass]="{ 'is-invalid': submitted && f.idcnrodocumentoconyuge.errors }" formControlName="idcnrodocumentoconyuge">
     </div>
     <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
       <label class="form-label" for="idcregimenpatrimonialconyuge">Regimen Patrimonial</label>
       <select class="form-select" name="idcregimenpatrimonialconyuge" id="idcregimenpatrimonialconyuge" [ngClass]="{ 'is-invalid': submitted && f.idcregimenpatrimonialconyuge.errors }" formControlName="idcregimenpatrimonialconyuge">
-=======
-      <input type="text" class="form-control" name="idcnrodocumentoconyuge" id="idcnrodocumentoconyuge" formControlName="idcnrodocumentoconyuge">
-    </div>
-    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
-      <label class="form-label" for="idcregimenpatrimonialconyuge">Regimen Patrimonial</label>
-      <select class="form-select" name="idcregimenpatrimonialconyuge" id="idcregimenpatrimonialconyuge" formControlName="idcregimenpatrimonialconyuge">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
         <option disabled selected>Seleccione</option>
         <option value="1">Opcion 1</option>
         <option value="2">Opcion 2</option>
@@ -321,11 +125,7 @@
     </div>
     <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
       <label class="form-label" for="idcnropartidaconyuge">Nro partida</label>
-<<<<<<< HEAD
       <input type="text" class="form-control" name="idcnropartidaconyuge" id="idcnropartidaconyuge" [ngClass]="{ 'is-invalid': submitted && f.idcnropartidaconyuge.errors }" formControlName="idcnropartidaconyuge">
-=======
-      <input type="text" class="form-control" name="idcnropartidaconyuge" id="idcnropartidaconyuge" formControlName="idcnropartidaconyuge">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
     </div>
 
 
@@ -333,21 +133,11 @@
       <label class="form-label">¿Actúa por Cuenta Propia?</label>
       <div class="d-block">
         <div class="form-check form-check-inline">
-<<<<<<< HEAD
           <input class="form-check-input" type="radio" (change)="remoValidatorCuentaPropia()" name="idcactuaporcuentapropia" [value]="true" [ngClass]="{ 'is-invalid': submitted && f.idcactuaporcuentapropia.errors }" formControlName="idcactuaporcuentapropia">
           <label class="form-check-label" for="idcactuaporcuentapropia-si">Si</label>
         </div>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" (change)="remoValidatorCuentaPropia()" name="idcactuaporcuentapropia" [value]="false" [ngClass]="{ 'is-invalid': submitted && f.idcactuaporcuentapropia.errors }" formControlName="idcactuaporcuentapropia">
-=======
-          <input class="form-check-input" type="radio" name="idcactuaporcuentapropia" id="idcactuaporcuentapropia-si"
-            [value]="true" formControlName="idcactuaporcuentapropia">
-          <label class="form-check-label" for="idcactuaporcuentapropia-si">Si</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="idcactuaporcuentapropia" id="idcactuaporcuentapropia-no"
-            [value]="false" formControlName="idcactuaporcuentapropia">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
           <label class="form-check-label" for="idcactuaporcuentapropia-no">No</label>
         </div>
       </div>
@@ -355,38 +145,22 @@
 
     <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
       <label class="form-label" for="idcacuentadequienactua">A cuenta de quien actua</label>
-<<<<<<< HEAD
       <input type="text" class="form-control" name="idcacuentadequienactua" id="idcacuentadequienactua" [ngClass]="{ 'is-invalid': submitted && f.idcacuentadequienactua.errors }" formControlName="idcacuentadequienactua">
-=======
-      <input type="text" class="form-control" name="idcacuentadequienactua" id="idcacuentadequienactua" formControlName="idcacuentadequienactua">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
     </div>
     <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
       <label class="form-label" for="idcacuentadequienactuanombreyapellido">Nombre y Apellido</label>
       <input type="text" class="form-control" name="idcacuentadequienactuanombreyapellido"
-<<<<<<< HEAD
         id="idcacuentadequienactuanombreyapellido" [ngClass]="{ 'is-invalid': submitted && f.idcacuentadequienactuanombreyapellido.errors }" formControlName="idcacuentadequienactuanombreyapellido">
-=======
-        id="idcacuentadequienactuanombreyapellido" formControlName="idcacuentadequienactuanombreyapellido">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
     </div>
     <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
       <label class="form-label" for="idcacuentadequienactuanropartidaregistral">Número Partida Registral</label>
       <input type="text" class="form-control" name="idcacuentadequienactuanropartidaregistral"
-<<<<<<< HEAD
         id="idcacuentadequienactuanropartidaregistral" [ngClass]="{ 'is-invalid': submitted && f.idcacuentadequienactuanropartidaregistral.errors }" formControlName="idcacuentadequienactuanropartidaregistral">
-=======
-        id="idcacuentadequienactuanropartidaregistral" formControlName="idcacuentadequienactuanropartidaregistral">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
     </div>
     <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
       <label class="form-label" for="idcacuentadequienactuatipodocumento">Tipo documento</label>
       <select class="form-select" name="idcacuentadequienactuatipodocumento"
-<<<<<<< HEAD
         id="idcacuentadequienactuatipodocumento" [ngClass]="{ 'is-invalid': submitted && f.idcacuentadequienactuatipodocumento.errors }"  formControlName="idcacuentadequienactuatipodocumento">
-=======
-        id="idcacuentadequienactuatipodocumento" formControlName="idcacuentadequienactuatipodocumento">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
         <option disabled selected>Seleccione</option>
         <option value="1">Dni</option>
         <option value="2">Pasaporte</option>
@@ -396,11 +170,7 @@
     <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
       <label class="form-label" for="idcacuentadequienactuanrodocumento">Número documento</label>
       <input type="text" class="form-control" name="idcacuentadequienactuanrodocumento"
-<<<<<<< HEAD
         id="idcacuentadequienactuanrodocumento" [ngClass]="{ 'is-invalid': submitted && f.idcacuentadequienactuanrodocumento.errors }" formControlName="idcacuentadequienactuanrodocumento">
-=======
-        id="idcacuentadequienactuanrodocumento" formControlName="idcacuentadequienactuanrodocumento">
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
     </div>
 
   </div>
@@ -412,11 +182,7 @@
       <button class="btn btn-primary w-100" disabled>Atras</button>
     </div>
     <div class="col-2">
-<<<<<<< HEAD
       <button class="btn btn-success w-100" type="submit">Siguiente</button>
-=======
-      <button class="btn btn-success w-100">Siguiente</button>
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
     </div>
   </div>
 </form>

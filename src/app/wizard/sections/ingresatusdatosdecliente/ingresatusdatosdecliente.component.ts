@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { DatePipe } from '@angular/common';
-<<<<<<< HEAD
+
 import { ServiceGeneralService } from '../../service-general.service';
-=======
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
 @Component({
   selector: 'app-ingresatusdatosdecliente',
   templateUrl: './ingresatusdatosdecliente.component.html',
@@ -15,22 +13,15 @@ export class IngresatusdatosdeclienteComponent implements OnInit {
   frmData!: FormGroup;
   today = new Date();
   pipe = new DatePipe('en-US');
-<<<<<<< HEAD
   submitted = false;
 
   constructor(
     private pFormBuilder: FormBuilder,
     private serviceGeneralService:ServiceGeneralService
-=======
-
-  constructor(
-    private pFormBuilder: FormBuilder,
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
   ) { }
 
   async ngOnInit() {
     this.frmData = this.pFormBuilder.group({
-<<<<<<< HEAD
       idcpaterno: ['', Validators.required],
       idcmaterno: ['', Validators.required],
       idcnombres: ['', Validators.required],
@@ -148,49 +139,6 @@ export class IngresatusdatosdeclienteComponent implements OnInit {
     this.serviceGeneralService.servicioGeneralObservableData = {
       tabmostrar: 2
     }
-=======
-      idcpaterno: [null, Validators.required],
-      idcmaterno: [null, Validators.required],
-      idcnombres: [null, Validators.required],
-      idctipodocumento: [null, Validators.required],
-      idcnrodocumento: [null, Validators.required],
-      idcfechanacimiento: [null, Validators.required],
-      idccorreo: [null, Validators.required],
-      idcteloficina: [null, Validators.required],
-      idcteldomicilio: [null, Validators.required],
-      idctelcelular: [null, Validators.required],
-      idcgradoinstruccion: [null, Validators.required],
-      idcdomicilio: [null, Validators.required],
-      idcdepartamento: [null, Validators.required],
-      idcprovincia: [null, Validators.required],
-      idcdistrito: [null, Validators.required],
-      idcfecharegistro: [  this.pipe.transform(this.today, 'dd/MM/YYYY'), Validators.required],
-      idclugarnacimiento: [null, Validators.required],
-      idcnacionalidad: [null, Validators.required],
-      idcpaisdomicilio: [null, Validators.required],
-      idcpaisresidencia: [null, Validators.required],
-      idctipodomiciliado: [null, Validators.required],
-      idcprofesionuocupacion: [null, Validators.required],
-      idccentrolaboral: [null, Validators.required],
-      idccargo: [null, Validators.required],
-      idctiemposervicio: [null, Validators.required],
-      idcestadocivil: [null, Validators.required],
-      idcnombreconyuge: [null, Validators.required],
-      idctipodocumentoconyuge: [null, Validators.required],
-      idcnrodocumentoconyuge: [null, Validators.required],
-      idcregimenpatrimonialconyuge: [null, Validators.required],
-      idcnropartidaconyuge: [null, Validators.required],
-      idcactuaporcuentapropia: [null, Validators.required],
-      idcacuentadequienactua: [null, Validators.required],
-      idcacuentadequienactuanombreyapellido: [null, Validators.required],
-      idcacuentadequienactuanropartidaregistral: [null, Validators.required],
-      idcacuentadequienactuatipodocumento: [null, Validators.required],
-      idcacuentadequienactuanrodocumento: [null, Validators.required]
-    })
-  }
-  onSubmit() {
-    console.log(1)
->>>>>>> 302e6bffab1de378302881f09d681165e9b69c79
   }
 
 }
