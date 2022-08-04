@@ -1,0 +1,12 @@
+@media only screen and (max-width: 820px) {
+    .tab-mobile-menu {
+        overflow-x: scroll;
+    }
+    .tab-mobile-menu::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    #wizard {
+        width: 1296px;
+    }
+  }

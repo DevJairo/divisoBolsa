@@ -1,21 +1,21 @@
 <form [formGroup]="frmData" (ngSubmit)="onSubmit()">
   <div class="row g-3 mt-2 mb-5">
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idcpaterno" data-bs-toggle="tooltip" data-bs-placement="top" title="aqui texto a mostrar">Apellido Paterno</label>
       <input type="text" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.idcpaterno.errors }" name="idcpaterno" id="idcpaterno" formControlName="idcpaterno">
       <div class="invalid-feedback" *ngIf="submitted && f.idcpaterno.errors">
         Ingresa tu nombre
       </div>
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idcmaterno">Apellido Materno</label>
       <input type="text" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.idcmaterno.errors }" name="idcmaterno" id="idcmaterno" formControlName="idcmaterno">
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idcnombres">Nombres</label>
       <input type="text" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.idcnombres.errors }" name="idcnombres" id="idcmaterno" name="idcnombres" id="idcnombres" formControlName="idcnombres">
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idctipodocumento">Tipo documento</label>
       <select class="form-select" name="idctipodocumento" [ngClass]="{ 'is-invalid': submitted && f.idctipodocumento.errors }" id="idctipodocumento" formControlName="idctipodocumento">
         <option disabled selected>Seleccione</option>
@@ -24,11 +24,11 @@
         <option value="3">Carnet de extranjeria</option>
       </select>
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idcnrodocumento">Número documento</label>
       <input type="text" class="form-control" name="idcnrodocumento" [ngClass]="{ 'is-invalid': submitted && f.idcnrodocumento.errors }" id="idcnrodocumento" formControlName="idcnrodocumento">
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idcfechanacimiento">Fecha nacimiento</label>
       <input type="date" class="form-control" name="idcfechanacimiento" [ngClass]="{ 'is-invalid': submitted && f.idcfechanacimiento.errors }" id="idcfechanacimiento" formControlName="idcfechanacimiento">
     </div>
@@ -40,24 +40,27 @@
         <div *ngIf="f.idccorreo.errors.email">Correo Invalido</div>
       </div>
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idcteloficina">Telf. Oficina</label>
       <input type="text" class="form-control" name="idcteldomicilio" [ngClass]="{ 'is-invalid': submitted && f.idcteldomicilio.errors }" id="idcteldomicilio" formControlName="idcteldomicilio">
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idctelcelular">Telf. Celular</label>
       <input type="text" class="form-control" name="idctelcelular" [ngClass]="{ 'is-invalid': submitted && f.idctelcelular.errors }" id="idctelcelular" formControlName="idctelcelular">
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idcgradoinstruccion">Grado Instrucción</label>
       <select class="form-select" name="idcgradoinstruccion" id="idcgradoinstruccion" [ngClass]="{ 'is-invalid': submitted && f.idcgradoinstruccion.errors }" formControlName="idcgradoinstruccion">
-        <option disabled selected>Seleccione</option>
+        <!-- <option disabled selected>Seleccione</option>
         <option value="1">Lince</option>
         <option value="2">San Isidro</option>
-        <option value="3">Jesus Maria</option>
+        <option value="3">Jesus Maria</option> -->
+        <option [value]="item.value" *ngFor="let item of frmData.value.idcgradoinstruccion">
+          {{item.text}}
+        </option>
       </select>
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label">Tipo Domiciliado</label>
       <div class="d-block">
         <div class="form-check form-check-inline">
@@ -70,24 +73,24 @@
         </div>
       </div>
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idcprofesionuocupacion">Profesión u ocupación</label>
       <input type="text" class="form-control" name="idcprofesionuocupacion" id="idcprofesionuocupacion" [ngClass]="{ 'is-invalid': submitted && f.idcprofesionuocupacion.errors }" formControlName="idcprofesionuocupacion">
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idccentrolaboral">Centro laboral</label>
       <input type="text" class="form-control" name="idccentrolaboral" id="idccentrolaboral" [ngClass]="{ 'is-invalid': submitted && f.idccentrolaboral.errors }" formControlName="idccentrolaboral">
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idccargo">Cargo</label>
       <input type="text" class="form-control" name="idccargo" id="idccargo" [ngClass]="{ 'is-invalid': submitted && f.idccargo.errors }" formControlName="idccargo">
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idctiemposervicio">Tiempo de servicio</label>
       <input type="number" class="form-control" name="idctiemposervicio" id="idctiemposervicio" [ngClass]="{ 'is-invalid': submitted && f.idctiemposervicio.errors }" formControlName="idctiemposervicio">
     </div>
     <div class="clear m-0"></div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idcestadocivil">Estado civil</label>
       <select class="form-select" name="idcestadocivil" id="idcestadocivil" (change)="remoValidatorEstadoCivil()" [ngClass]="{ 'is-invalid': submitted && f.idcestadocivil.errors }" formControlName="idcestadocivil">
         <option disabled selected>Seleccione</option>
@@ -97,11 +100,11 @@
       </select>
     </div>
 
-    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
+    <div class="col-lg-2 col-md-4 col-xs-12" *ngIf="frmData.value.idcestadocivil == 'casado'">
       <label class="form-label" for="idcnombreconyuge">Nombre completo conyuge</label>
       <input type="text" class="form-control" name="idcnombreconyuge" id="idcnombreconyuge" [ngClass]="{ 'is-invalid': submitted && f.idcnombreconyuge.errors }" formControlName="idcnombreconyuge">
     </div>
-    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
+    <div class="col-lg-2 col-md-4 col-xs-12" *ngIf="frmData.value.idcestadocivil == 'casado'">
       <label class="form-label" for="idctipodocumentoconyuge">Tipo documento</label>
       <select class="form-select" name="idctipodocumentoconyuge" id="idctipodocumentoconyuge" [ngClass]="{ 'is-invalid': submitted && f.idctipodocumentoconyuge.errors }" formControlName="idctipodocumentoconyuge">
         <option disabled selected>Seleccione</option>
@@ -110,11 +113,11 @@
         <option value="3">Carnet de extranjeria</option>
       </select>
     </div>
-    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
+    <div class="col-lg-2 col-md-4 col-xs-12" *ngIf="frmData.value.idcestadocivil == 'casado'">
       <label class="form-label" for="idcnrodocumentoconyuge">Número documento</label>
       <input type="text" class="form-control" name="idcnrodocumentoconyuge" id="idcnrodocumentoconyuge" [ngClass]="{ 'is-invalid': submitted && f.idcnrodocumentoconyuge.errors }" formControlName="idcnrodocumentoconyuge">
     </div>
-    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
+    <div class="col-lg-2 col-md-4 col-xs-12" *ngIf="frmData.value.idcestadocivil == 'casado'">
       <label class="form-label" for="idcregimenpatrimonialconyuge">Regimen Patrimonial</label>
       <select class="form-select" name="idcregimenpatrimonialconyuge" id="idcregimenpatrimonialconyuge" [ngClass]="{ 'is-invalid': submitted && f.idcregimenpatrimonialconyuge.errors }" formControlName="idcregimenpatrimonialconyuge">
         <option disabled selected>Seleccione</option>
@@ -123,13 +126,13 @@
         <option value="3">Opcion 3</option>
       </select>
     </div>
-    <div class="col-2" *ngIf="frmData.value.idcestadocivil == 'casado'">
+    <div class="col-lg-2 col-md-4 col-xs-12" *ngIf="frmData.value.idcestadocivil == 'casado'">
       <label class="form-label" for="idcnropartidaconyuge">Nro partida</label>
       <input type="text" class="form-control" name="idcnropartidaconyuge" id="idcnropartidaconyuge" [ngClass]="{ 'is-invalid': submitted && f.idcnropartidaconyuge.errors }" formControlName="idcnropartidaconyuge">
     </div>
 
 
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label">¿Actúa por Cuenta Propia?</label>
       <div class="d-block">
         <div class="form-check form-check-inline">
@@ -143,21 +146,21 @@
       </div>
     </div>
 
-    <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
+    <div class="col-lg-2 col-md-4 col-xs-12" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
       <label class="form-label" for="idcacuentadequienactua">A cuenta de quien actua</label>
       <input type="text" class="form-control" name="idcacuentadequienactua" id="idcacuentadequienactua" [ngClass]="{ 'is-invalid': submitted && f.idcacuentadequienactua.errors }" formControlName="idcacuentadequienactua">
     </div>
-    <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
+    <div class="col-lg-2 col-md-4 col-xs-12" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
       <label class="form-label" for="idcacuentadequienactuanombreyapellido">Nombre y Apellido</label>
       <input type="text" class="form-control" name="idcacuentadequienactuanombreyapellido"
         id="idcacuentadequienactuanombreyapellido" [ngClass]="{ 'is-invalid': submitted && f.idcacuentadequienactuanombreyapellido.errors }" formControlName="idcacuentadequienactuanombreyapellido">
     </div>
-    <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
+    <div class="col-lg-2 col-md-4 col-xs-12" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
       <label class="form-label" for="idcacuentadequienactuanropartidaregistral">Número Partida Registral</label>
       <input type="text" class="form-control" name="idcacuentadequienactuanropartidaregistral"
         id="idcacuentadequienactuanropartidaregistral" [ngClass]="{ 'is-invalid': submitted && f.idcacuentadequienactuanropartidaregistral.errors }" formControlName="idcacuentadequienactuanropartidaregistral">
     </div>
-    <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
+    <div class="col-lg-2 col-md-4 col-xs-12" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
       <label class="form-label" for="idcacuentadequienactuatipodocumento">Tipo documento</label>
       <select class="form-select" name="idcacuentadequienactuatipodocumento"
         id="idcacuentadequienactuatipodocumento" [ngClass]="{ 'is-invalid': submitted && f.idcacuentadequienactuatipodocumento.errors }"  formControlName="idcacuentadequienactuatipodocumento">
@@ -167,7 +170,7 @@
         <option value="3">Carnet de extranjeria</option>
       </select>
     </div>
-    <div class="col-2" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
+    <div class="col-lg-2 col-md-4 col-xs-12" *ngIf="!frmData.value.idcactuaporcuentapropia && frmData.value.idcactuaporcuentapropia != null">
       <label class="form-label" for="idcacuentadequienactuanrodocumento">Número documento</label>
       <input type="text" class="form-control" name="idcacuentadequienactuanrodocumento"
         id="idcacuentadequienactuanrodocumento" [ngClass]="{ 'is-invalid': submitted && f.idcacuentadequienactuanrodocumento.errors }" formControlName="idcacuentadequienactuanrodocumento">
@@ -178,10 +181,10 @@
     <div class="col-4">
 
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <button class="btn btn-primary w-100" disabled>Atras</button>
     </div>
-    <div class="col-2">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <button class="btn btn-success w-100" type="submit">Siguiente</button>
     </div>
   </div>

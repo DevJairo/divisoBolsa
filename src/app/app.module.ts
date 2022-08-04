@@ -7,8 +7,8 @@ import { WizardModule } from './wizard/wizard.module';
 import { PdfComponent } from './wizard/pdf/pdf.component';
 
 const routes: Routes = [
-  { path: '', component: PdfComponent }
-  // { path: '', component: IndexComponent }
+  //{ path: '', component: PdfComponent }
+  { path: '', component: IndexComponent }
 ];
 
 @NgModule({

@@ -60,6 +60,16 @@ export class IngresatusdatosdeclienteComponent implements OnInit {
       idcacuentadequienactuatipodocumento: [''],
       idcacuentadequienactuanrodocumento: ['']
     })
+
+    this.frmData.controls['idcgradoinstruccion'].setValue([
+      {
+        text:'opcion1',value:'00'
+      },
+      {
+        text:'opcion2',value:'01'
+      }
+    ]);
+
   }
   get f() { return this.frmData.controls; }
 
@@ -131,10 +141,10 @@ export class IngresatusdatosdeclienteComponent implements OnInit {
   }
   onSubmit() {
     this.submitted = true;
-    if (this.frmData.invalid) {
-      console.log('invalid')
-      return;
-    }
+    // if (this.frmData.invalid) {
+    //   console.log('invalid')
+    //   return;
+    // }
     console.log('validado')
     this.serviceGeneralService.servicioGeneralObservableData = {
       tabmostrar: 2
