@@ -12,6 +12,7 @@ import { PdfComponent } from './pdf/pdf.component';
 import { PepComponent } from './pdf/components/pep/pep.component';
 import { IntermediacionComponent } from './pdf/components/intermediacion/intermediacion.component';
 import { DeclaracionComponent } from './pdf/components/declaracion/declaracion.component';
+import { AdministracionComponent } from './pdf/components/administracion/administracion.component';
 
 
 
@@ -26,7 +27,8 @@ import { DeclaracionComponent } from './pdf/components/declaracion/declaracion.c
     PdfComponent,
     PepComponent,
     IntermediacionComponent,
-    DeclaracionComponent
+    DeclaracionComponent,
+    AdministracionComponent
   ],
   imports: [
     CommonModule,
