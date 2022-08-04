@@ -32,7 +32,7 @@
       <label class="form-label" for="idcfechanacimiento">Fecha nacimiento</label>
       <input type="date" class="form-control" name="idcfechanacimiento" [ngClass]="{ 'is-invalid': submitted && f.idcfechanacimiento.errors }" id="idcfechanacimiento" formControlName="idcfechanacimiento">
     </div>
-    <div class="col-4">
+    <div class="col-lg-2 col-md-4 col-xs-12">
       <label class="form-label" for="idccorreo">Correo</label>
       <input type="text" class="form-control" name="idccorreo" [ngClass]="{ 'is-invalid': submitted && f.idccorreo.errors }" id="idccorreo" formControlName="idccorreo">
       <div *ngIf="submitted && f.idccorreo.errors" class="invalid-feedback">
