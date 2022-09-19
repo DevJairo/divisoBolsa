@@ -1,30 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 #pdf1 {
-    color: #000;
-    max-width: 750px;
-    text-align: justify;
-    margin: auto;
-  
-    h2 {
-      font-size: 13px;
-      font-weight: bold;
-      padding-top: 30px;
-    }
-  
-    .body-pdf {
-      font-size: 12px;
-      font-weight: normal;
-      line-height: 1.5;
-      word-spacing: 0.1em;
-  
-      .content-input {
-        input {
-          width: 70px;
-          margin: 0 20px;
-          height: 40px;
-          border: solid 2px #00e300;
-          border-radius: 10px;
-        }
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  max-width: 750px;
+  text-align: justify;
+  margin: auto;
+
+  h2 {
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 30px;
+  }
+
+  .body-pdf {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    word-spacing: 0.1em;
+
+    .content-input {
+      input {
+        width: 70px;
+        margin: 0 20px;
+        height: 40px;
+        border: solid 2px #00e300;
+        border-radius: 10px;
       }
     }
   }
-  
+
+  .align-items-center {
+    align-items: center !important;
+  }
+
+  .justify-content-center {
+    justify-content: center !important;
+  }
+
+  .d-flex {
+    display: flex !important;
+  }
+
+  .m-0 {
+    margin: 0 !important;
+  }
+
+  .fw-bold {
+    font-weight: 700 !important;
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+
+  .pt-0 {
+    padding-top: 0 !important;
+  }
+
+  .d-block {
+    display: block !important;
+  }
+
+  .pt-1 {
+    padding-top: 0.25rem !important;
+  }
+  .mt-1 {
+    margin-top: 0.25rem!important;
+  }
+  .mt-3 {
+    margin-top: 1rem!important;
+}
+.pb-2 {
+  padding-bottom: 0.5rem!important;
+}
+  * {
+    box-sizing: border-box;
+  }
+}
